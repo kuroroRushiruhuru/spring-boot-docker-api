@@ -37,6 +37,4 @@ jobs:
           script: |
             cd ~/spring-boot-docker-api
             git pull origin master
-            chmod +x mvnw
-            ./mvnw clean package -DskipTests
             docker compose up -d --build
